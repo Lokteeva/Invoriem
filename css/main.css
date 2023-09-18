@@ -1,0 +1,112 @@
+/* 1.36.00 */
+@import './reset.css';
+@import './fonts/stylesheet.css';
+
+body {
+  color: #114455;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+}
+.container {
+  max-width: 1750px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.btn {
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
+  border: solid 1px #114455;
+  border-radius: 2px;
+  padding: 10px 24px;
+  padding-right: 72px;
+  display: inline-block;
+}
+.btn::after {
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 32px;
+  /* background-color: red; */
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../img/strelka-black.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: color 0.15s ease-in, background-color 0.15s ease-in;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #114455;
+  color: #fff;
+}
+.btn:hover:after {
+  background-image: url('../img/strelka-wight.svg');
+}
+.btn:active {
+  top: 1px;
+}
+.header {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('../img/header-img.jpg');
+  background-size: cover;
+}
+.header::after {
+  content: '';
+  width: 38px;
+  height: 28px;
+  position: absolute;
+  /* background-color: red; */
+  background-image: url('../img/end.svg');
+  bottom: 60px;
+  left: 50%;
+}
+.header__top {
+  padding: 44px 0;
+  margin-bottom: 126px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 118px;
+}
+.link {
+  font-size: 20px;
+  font-weight: 600;
+}
+.header__content {
+  max-width: 1060px;
+}
+.header__title {
+  max-width: 734px;
+  font-weight: 800;
+  font-size: 80px;
+  padding-bottom: 48px;
+}
+.header__text {
+  font-size: 34px;
+  padding-bottom: 72px;
+}
+.header__btn {
+}
+.btn--big {
+  padding: 14px 32px;
+  padding-right: 80px;
+  background-color: #114455;
+  color: #fff;
+}
+.btn--big::after {
+  background-image: url('../img/strelka-wight.svg');
+}
+.btn--big:hover,
+.btn--big:focus {
+  background-color: #000000;
+}
